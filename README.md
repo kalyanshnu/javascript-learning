@@ -3,26 +3,27 @@ A repository documenting my journey of relearning JavaScript from the fundamenta
 
 Topics include:
 
-JavaScript basics & syntax
+1) JavaScript basics & syntax
 
-Variables, data types & operators
+2) Variables, data types & operators
 
-Conditionals & loops
+3) Conditionals & loops
 
-Functions
+4) Functions
 
-Arrays & objects
+5) Arrays & objects
 
-DOM manipulation
+6) DOM manipulation
 
-Events
+7) Events
 
-Asynchronous JavaScript
+8) Asynchronous JavaScript
 
-APIs & Fetch
+9) APIs & Fetch
 
-ES6+ concepts
+10) ES6+ concepts
 
-Practice problems & mini projects
+11) Practice problems & mini projects
 
-Goal: Build a strong JavaScript foundation through consistent practice and hands-on coding.
+## Goal: 
+Build a strong JavaScript foundation through consistent practice and hands-on coding.
