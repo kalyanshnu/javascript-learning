@@ -1,5 +1,3 @@
-
-
 // var age = +(prompt("Enter Your Age")) // this is also a way to take input as numbers and not as string
 
 // let a = 10;
@@ -16,7 +14,7 @@
 // var a = Number(prompt("Enter your answer"))
 // var b = Number(prompt("Enter Your guess"))
 
-// a>=b?console.log("Hello"):console.log("HiHIhi");
+// a >= b ? console.log("Hello") : console.log("HiHIhi");
 
 //ternary operator: a condition b ? True : False
 
@@ -33,6 +31,10 @@
     
 // }
 
-let a = 12;
+// let str = "hello  ji amdmiwo "
+// let ans2 = str.slice(0,5);
+// let ans3 = str.replace("i","y")
+// let ans1 = str.split(" ");
+// let ans = str.includes("I");
+// let ans4 = str.replaceAll("i", "y");
 
-if(a>)
