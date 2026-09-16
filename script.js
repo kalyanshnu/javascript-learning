@@ -38,3 +38,52 @@
 // let ans = str.includes("I");
 // let ans4 = str.replaceAll("i", "y");
 
+
+// function ab(){
+//     console.log("hey");
+//     return 12;
+// }
+
+// ab();
+
+// ans = ab();
+
+// let implicit = () => 143;
+
+// yes = implicit();
+
+//iife- immediately invoked function
+// var ans = (function abcd() {
+//     var a = 12;
+
+//     return {
+//         set: function (val) {
+//             a = val;
+//         },
+//         get : function(){
+//             console.log(a);
+//         },
+//     };
+// })();
+
+//hofs
+// function love(){
+//     return function(){
+//         console.log("Martina");
+        
+//     }
+// }
+
+// love()();
+
+// function wifey(val) { //hof
+//     val();
+// }
+
+// wifey(function() {   //callback function
+//     console.log("Martina");
+// })
+
+
+var arr = [];
+var arr2 = new Array();

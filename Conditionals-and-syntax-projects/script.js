@@ -113,6 +113,7 @@
 // }
 
 
+
 // 4. Login Authentication
 // Create a simple login system.
 // Given:
@@ -193,6 +194,7 @@
 // }
 
 
+
 // 6. Leap Year Checker
 // Create a program that takes a year and determines whether it is a leap year.
 // Rules:
@@ -256,6 +258,7 @@
 // }
 
 
+
 // 🟡 Level 2 — Combining Conditions
 // 8. Simple ATM
 // Create a simple ATM program.
@@ -276,3 +279,174 @@
 // Display an error for an invalid menu choice.
 // Bonus: Add a daily withdrawal limit.
 
+
+// let Balance = 10000
+// let F_PIN = 1234
+
+// let PIN = Number(prompt("Enter your PIN: "));
+// let count = 0;
+
+// if(PIN === F_PIN){
+//     let Choice = Number(prompt("Welcome User, \n" +
+//         "What do you want to do Choose? \n " +
+//         "1. Check Balance \n" +
+//         " 2. Withdraw Money \n" +
+//         " 3. Deposit Money"));
+
+//     if(Choice === 1){
+//         console.log(`Your account Balance: ${Balance}`);
+//     }
+//     else if(Choice === 2){
+//         let withdraw = Number(prompt("Enter the Withdraw Amount: "));
+        
+//         if(count < 5){
+//             if(withdraw > 0 && withdraw <= Balance){
+//                 Balance = Balance - withdraw;
+//                 console.log(`${withdraw} has been withdrawn.`);
+//                 console.log(`Your current Balance: ${Balance}`);
+//                 count++;
+//             }
+//             else{
+//                 console.log("invalid amount or insufficient Balance.");
+//             }
+//         }
+//         else{
+//             console.log("Daily withdrawal limit reached.");
+//         }
+//     }
+//     else if(Choice === 3){
+//         let deposit = Number(prompt("Enter the Deposit Amount: "));
+
+//         if(deposit > 0){
+//             Balance = Balance + deposit;
+//             console.log(`${deposit} amountconsole.log("Daily withdrawal limit reached"); has been deposited to your account.`);
+//         }
+//         else{
+//             console.log("Invalid deposit!!!!");
+//         }
+//     }
+//     else{
+//         console.log("Invalid menu choice");
+//     }
+// }
+// else{
+//     console.log("Incorrect PIN!");
+// }
+
+
+
+// 9. Movie Ticket Price Calculator
+// Create a ticket-price calculator.
+// Ask for:
+// Age
+// Whether today is a weekend
+// Whether the person is a student
+// Rules:
+// Normal ticket = ₹200
+// Child (<13) = ₹100
+// Senior citizen (60+) = ₹120
+// Student = ₹150
+// Weekend surcharge = ₹50
+// Calculate the final ticket price based on the conditions.
+// Bonus: Decide how the weekend surcharge interacts with discounts.
+
+
+let age = prompt();
+
+
+// 10. Electricity Bill Calculator
+// Create an electricity bill calculator.
+// Use these rates:
+// 0–100 units       → ₹2/unit
+// 101–200 units     → ₹3/unit
+// 201–300 units     → ₹5/unit
+// Above 300 units   → ₹7/unit
+// Ask the user for the number of units consumed and calculate the bill.
+// Important: Use slab-based calculation.
+// For example, 250 units should not simply be:
+// 250 × ₹5
+// Instead, calculate each slab separately.
+// Bonus: Add a fixed ₹100 service charge.
+
+
+
+// Level 3 — Logic Projects
+// 11. Rock Paper Scissors
+// Create a Rock-Paper-Scissors game.
+// The user chooses:
+// rock
+// paper
+// scissors
+// The computer randomly chooses one.
+// Determine:
+// Player wins
+// Computer wins
+// Draw
+// Rules:
+// Rock beats Scissors
+// Scissors beats Paper
+// Paper beats Rock
+// Bonus: Add score tracking for 5 rounds.
+
+
+// 12. Mini Quiz Game
+// Create a quiz containing at least 5 questions.
+// For every correct answer:
+// +1 point
+// For every wrong answer:
+// 0 points
+// At the end:
+// 5 → Excellent
+// 4 → Very Good
+// 3 → Good
+// 1–2 → Needs Improvement
+// 0 → Try Again
+// Bonus:
+// Show the correct answer after a wrong response.
+// Add different difficulty levels.
+// Give bonus points for difficult questions.
+
+
+// 🚀 Final Challenge
+// 13. Student Result & Eligibility System
+// Build a complete student evaluation system.
+// Take:
+// Student name
+// Marks in 5 subjects
+// Attendance percentage
+// Age
+// Calculate:
+// Total marks
+// Percentage
+// Grade
+// Pass/fail status
+// Grade system:
+// 90+ → A+
+// 80–89 → A
+// 70–79 → B
+// 60–69 → C
+// 50–59 → D
+// Below 50 → F
+// Then determine:
+// Exam eligibility
+// Student is eligible if:
+// Attendance >= 75%
+// AND
+// All subjects are passed
+// Scholarship eligibility
+// Student gets scholarship if:
+// Percentage >= 85%
+// AND
+// Attendance >= 80%
+// Final category
+// A+ → Outstanding
+// A  → Excellent
+// B  → Very Good
+// C  → Good
+// D  → Average
+// F  → Fail
+// Bonus challenge: Add different scholarship levels:
+// 90%+ → 100% scholarship
+// 85–89% → 50% scholarship
+// 80–84% → 25% scholarship
+// Below 80% → No scholarship
