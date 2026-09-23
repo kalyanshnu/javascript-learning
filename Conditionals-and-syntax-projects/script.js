@@ -351,7 +351,32 @@
 // Bonus: Decide how the weekend surcharge interacts with discounts.
 
 
-let age = prompt();
+
+// let Age = Number(prompt("Enter Your Age: "));
+// let IsStudent = confirm("Are you a student?");
+// let IsWeekend = confirm("is today weekend?");
+// let BasePrice;
+
+// if(Age < 13 ){
+//     BasePrice = 100; 
+// }
+// else if(Age >= 60){
+//     BasePrice = 120;
+// }
+// else if(IsStudent){
+//     BasePrice = 150;
+// }
+// else{
+//     BasePrice = 200;
+// }
+
+// let FinalPrice = BasePrice;
+// if(IsWeekend){
+//     FinalPrice += 50;
+// }
+
+// console.log(`Price of the Ticket is: ₹${FinalPrice}`)
+
 
 
 // 10. Electricity Bill Calculator
@@ -368,6 +393,20 @@ let age = prompt();
 // Instead, calculate each slab separately.
 // Bonus: Add a fixed ₹100 service charge.
 
+// let nunits = Number(prompt("Enter the no. of units consumed: "));
+
+// if(nunits > 300){
+//     console.log(`Your Elctricity Bill: ${(nunits % 300) * 7 + 500 + 300 + 200 + 100}`);
+// }
+// else if(nunits > 200 && nunits <= 300){
+//     console.log(`Your Elctricity Bill: ${(nunits % 200) * 5 + 300 + 200 + 100}`);
+// }
+// else if(nunits > 100 && nunits <= 200){
+//     console.log(`Your Elctricity Bill: ${(nunits % 100) * 3 + 200 + 100}`);
+// }
+// else{
+//     console.log(`Your Elctricity Bill: ${nunits * 2 + 100}`);
+// }
 
 
 // Level 3 — Logic Projects
@@ -388,6 +427,61 @@ let age = prompt();
 // Paper beats Rock
 // Bonus: Add score tracking for 5 rounds.
 
+// let Computer = ["rock","paper","scissor"];
+// let Round = 1;
+// let PlayerScore = 0;
+// let ComputerScore = 0;
+// let draw = 0;
+
+
+// while (Round <= 5) {
+
+//     let Player = prompt("Choose from Rock, Paper and Scissor").toLowerCase();
+//     let Comp_Choice = Computer[Math.floor(Math.random() * Computer.length)];
+
+//     console.log(`\n Round ${Round}`);
+//     console.log(`\n Player: ${Player}`);
+//     console.log(`\n Computer: ${Comp_Choice}`);
+
+    
+//     if (!Computer.includes(Player)){
+//         console.log("Invalid Choice, Choose Rock, Paper or scissor");
+//         continue;
+//     }
+//     else if((Player == "rock" && Comp_Choice == "scissor") ||
+//     (Player == "paper" && Comp_Choice == "rock") ||
+//     (Player == "scissor" && Comp_Choice == "paper")){
+//         console.log("Player Wins");
+//         PlayerScore++;
+//     }
+//     else if(Player == Comp_Choice){
+//         console.log("Draw");
+//         draw++;
+//     }
+//     else{
+//         console.log("Computer Wins");
+//         ComputerScore++;
+//     }
+
+//     Round++
+// }
+
+// console.log("\n______FINAL SCORE________\n");
+// console.log(`Player Score: ${PlayerScore}`);
+// console.log(`Computer Score: ${ComputerScore}`);
+// console.log(`Draw: ${draw}`);
+
+// if(PlayerScore > ComputerScore){
+//     console.log("Player wins the game!");
+// }
+// else if(PlayerScore < ComputerScore){
+//     console.log("Computer wins the game!");
+// }
+// else{
+//     console.log("The game is a draw!");
+// }
+
+
 
 // 12. Mini Quiz Game
 // Create a quiz containing at least 5 questions.
@@ -405,6 +499,68 @@ let age = prompt();
 // Show the correct answer after a wrong response.
 // Add different difficulty levels.
 // Give bonus points for difficult questions.
+
+// let Questions = ["1. Which chemical element and gas makes up approximately 78% of Earth's atmosphere?",
+//     "2. What is the capital city of Australia? (*)",
+//     "3. Which ancient South American civilization built the famous mountaintop citadel of Machu Picchu? (*)",
+//     "4. What subatomic particle carries a negative electrical charge? ",
+//     "5. What is traditionally recognized as the longest river in the world?"
+// ];
+// let Answer = ["nitrogen",
+//     "canberra",
+//     "inca",
+//     "electron",
+//     "nile"
+// ];
+// let Points = 0;
+// let Bonus = 0;
+// let ans;
+
+// console.log("Difficulty levels Denoted from (*)");
+// console.log("\n For answering Difficult Questions you will get +0.5");
+
+// for (let index = 0; index < Questions.length; index++) {
+
+//     console.log(Questions[index]);
+//     ans = prompt(`Write the answer to this question: `).toLowerCase().trim();
+
+//     if(Answer[index] === ans){
+//         Points++;
+//         if(Questions[index].includes("*")){
+//             Bonus += 0.5;
+//         }
+//     }
+//     else{
+//         console.log(`${ans} is wrong.`);
+//         console.log(`Correct Answer is: ${Answer[index]}`);
+//     }
+// }
+
+// let FinalScore = Points + Bonus;
+
+// console.log("\n________Final Score__________\n");
+// console.log("Final evaluation is based on only points");
+// console.log(`Points : ${Points}`)
+// console.log(`Bonus Points : ${Bonus}`)
+// console.log(`Your Score is: ${FinalScore}`);
+
+
+// if(Points >=  5){
+//     console.log("Excellent");
+// }
+// else if(Points >= 4){
+//     console.log("Very Good");
+// }
+// else if(Points >= 3){
+//     console.log("Good");
+// }
+// else if(Points > 0){
+//     console.log("Need Improvement");
+// }
+// else{
+//     console.log("Try Again");
+// }
+
 
 
 // 🚀 Final Challenge

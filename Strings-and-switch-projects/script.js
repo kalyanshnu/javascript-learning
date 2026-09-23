@@ -13,7 +13,6 @@
 // Output: Username cannot contain spaces
 // Concepts: length, includes(), startsWith(), conditionals.
 
-
 // let UserName = prompt("Enter your user name: ");
 // let numbers = "0123456789"
 
@@ -50,6 +49,35 @@
 // Bonus: Make it case-insensitive and ignore spaces.
 // Concepts: toLowerCase(), split(), reverse(), join().
 
+// let word = prompt("Enter the word: ").toLowerCase().replaceAll(" ", "");
+// let wordReverse = "";
+
+// for(let i = word.length-1; i >= 0; i--){
+//     wordReverse += word[i];
+// }
+
+// if(word === wordReverse){
+//     console.log("Palindrome");
+// }
+// else{
+//     console.log("Not a Palindrome");
+// }
+
+// or
+
+// let word = prompt("Enter the word: ").toLowerCase().replaceAll(" ", "");
+
+// // 1. Split into array -> 2. Reverse array -> 3. Join back into string
+// let wordReverse = word.split("").reverse().join("");
+
+// if(word === wordReverse){
+//     console.log("Palindrome");
+// }
+// else{
+//     console.log("Not a palindrome");
+// }
+
+
 
 // 3) Character Counter
 // Challenge: Analyze a sentence and count different types of characters.
@@ -68,6 +96,43 @@
 // Digits: 3
 // Bonus: Also count special characters.
 // Concepts: String traversal, includes(), length, conditionals.
+
+// let sentance = prompt("Enter a Sentence: ").toLowerCase()
+// let vowels = "aeiou";
+// let consonants = "bcdfghjklmnpqrstvwxyz"
+// let digits = "0123456789";
+
+// let countVowels = 0;
+// let countConsonants = 0;
+// let countSpaces = 0;
+// let countDigits = 0;
+// let countSpecial = 0;
+
+// for (let i = 0; i < sentance.length; i++) {
+//     if(vowels.includes(sentance[i])){
+//         countVowels++;
+//     }
+//     else if(digits.includes(sentance[i])){
+//         countDigits++;
+//     }
+//     else if(" ".includes(sentance[i])){
+//         countSpaces++;
+//     }
+//     else if(consonants.includes(sentance[i])){
+//         countConsonants++;
+//     }
+//     else{
+//         countSpecial++;
+//     }
+// }
+
+// console.log(`Vowels: ${countVowels} \n
+//     Consonants: ${countConsonants} \n
+//     Spaces: ${countSpaces} \n
+//     Digits: ${countDigits} \n
+//     Special Character: ${countSpecial}
+//     `);
+
 
 
 // 4) Word & Sentence Analyzer
@@ -90,6 +155,37 @@
 // Bonus: Find the longest word.
 // Concepts: trim(), split(), toUpperCase(), includes().
 
+// let sentence = prompt("Enter a sentence: ").trim();
+// let arr = sentence.split(/\s+/);
+
+// let longest = arr[0]; // let's assume the 1st word is the longest
+
+// for(let i = 1; i < arr.length; i++){ // here check if the assumed word length is actually greater than other word or not.
+//     if(longest.length <= arr[i].length){
+//         longest = arr[i];
+//     }
+// }
+
+// console.log(`Characters: ${sentence.length}`);
+// console.log(`Word: ${arr.length}`);
+// console.log(`First word: ${arr[0]}`);
+// console.log(`Last word: ${arr[arr.length-1]}`);
+// console.log(`Uppercase : ${sentence.toUpperCase()}`);
+// console.log(`Longest word : ${longest}`);
+
+// let dhundho = prompt("Enter the particular word you want to search in the sentence").toLowerCase().trim();
+
+// let words = sentence.toLowerCase().split(/\s+/);
+
+// if(words.includes(dhundho)){
+//     console.log(`particular searched word: ${dhundho}`)
+//     console.log("Found the word in the sentence");
+// }
+// else{
+//     console.log("didn't found the word in the given sentence");
+// }
+
+
 
 // 5) Password Strength Checker
 // Challenge: Create a basic password strength checker.
@@ -106,6 +202,102 @@
 // Strong
 // Bonus: Display exactly which requirements are missing.
 // Concepts: String methods, conditions, regular expressions (optional).
+
+let password = prompt("Enter your password: ");
+
+let number = "0123456789";
+let specialCharacters = "!@#$%^&*()_+-=*/'><.,:;{}[]|\\"
+
+let hasLength = false;
+let hasUppercase = false;
+let hasLowercase = false;
+let hasNumber = false;
+let hasSpecial = false;
+
+// Check length
+
+if(password.length >= 8){
+    hasLength = true;
+}
+
+// Check every character
+
+for(let i = 0; i < password.length; i++){
+
+    let char = password[i];
+
+    if(char === char.toUpperCase() && char !== char.toLowerCase()){
+        hasUppercase = true;
+    }
+    if(char === char.toLowerCase() && char !== char.toUpperCase()){
+        hasLowercase = true;
+    }
+    if(number.includes(char)){
+        hasNumber = true;
+    }
+    if(specialCharacters.includes(char)){
+        hasSpecial = true;
+    }
+}
+// Calculate score
+
+let score = 0;
+
+if(hasLength){
+    score++;
+}
+
+if(hasUppercase){
+    score++;
+}
+
+if(hasLowercase){
+    score++;
+}
+
+if(hasNumber){
+    score++;
+}
+
+if(hasSpecial){
+    score++;
+}
+
+// Determine strength
+
+if(score <= 2){
+    console.log("Password Strength: Weak");
+}
+else if(score <= 4){
+    console.log("Password Strength: Medium");
+}
+else{
+    console.log("Password Strength: Strong");
+}
+
+// Show missing requirements
+
+console.log("\nMissing Requirements:");
+
+if(!hasLength){
+    console.log("- Password must have at least 8 characters.");
+}
+
+if(!hasUppercase){
+    console.log("- Password must contain an uppercase letter.");
+}
+
+if(!hasLowercase){
+    console.log("- Password must contain a lowercase letter.");
+}
+
+if(!hasNumber){
+    console.log("- Password must contain a number.");
+}
+
+if(!hasSpecial){
+    console.log("- Password must contain a special character.");
+}
 
 
 
@@ -126,6 +318,19 @@
 // Trimmed: I love JavaScript
 // Bonus: Create a username from a person's full name.
 // Concepts: trim(), replace(), toUpperCase(), toLowerCase().
+
+let Sentence = prompt("Enter a Sentence: ");
+
+let Uppercase = Sentence.toUpperCase();
+let Lowercase = Sentence.toLowerCase();
+let RemoveExtraSpaces = Sentence.trim();
+
+let Word = prompt()
+let Replaced = prompt()
+
+console.log("Sentence: " + Sentence);
+
+let Replace = Sentence.replace(Word, Replaced);
 
 
 

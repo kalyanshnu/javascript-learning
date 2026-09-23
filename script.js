@@ -85,5 +85,20 @@
 // })
 
 
-var arr = [];
-var arr2 = new Array();
+// var arr = [];
+// var arr2 = new Array(30);
+
+// for(let i = 0; i < 30; i++){
+//     arr[i] = i;
+//     arr2[i] = i;
+// }
+
+
+// var obj ={
+//     name : "Martina",
+//     age : 21,
+//     Relationship_Status : "taken"
+// }
+
+// obj.name
+// obj.Relationship_Status

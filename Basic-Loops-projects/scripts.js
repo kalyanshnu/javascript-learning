@@ -8,6 +8,7 @@
 // Concepts: for, while, increment, decrement, conditions.
 
 
+
 // 2) Multiplication Table
 // Challenge: Take a number from the user and print its multiplication table.
 // Example:
