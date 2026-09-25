@@ -203,101 +203,101 @@
 // Bonus: Display exactly which requirements are missing.
 // Concepts: String methods, conditions, regular expressions (optional).
 
-let password = prompt("Enter your password: ");
+// let password = prompt("Enter your password: ");
 
-let number = "0123456789";
-let specialCharacters = "!@#$%^&*()_+-=*/'><.,:;{}[]|\\"
+// let number = "0123456789";
+// let specialCharacters = "!@#$%^&*()_+-=*/'><.,:;{}[]|\\"
 
-let hasLength = false;
-let hasUppercase = false;
-let hasLowercase = false;
-let hasNumber = false;
-let hasSpecial = false;
+// let hasLength = false;
+// let hasUppercase = false;
+// let hasLowercase = false;
+// let hasNumber = false;
+// let hasSpecial = false;
 
-// Check length
+// // Check length
 
-if(password.length >= 8){
-    hasLength = true;
-}
+// if(password.length >= 8){
+//     hasLength = true;
+// }
 
-// Check every character
+// // Check every character
 
-for(let i = 0; i < password.length; i++){
+// for(let i = 0; i < password.length; i++){
 
-    let char = password[i];
+//     let char = password[i];
 
-    if(char === char.toUpperCase() && char !== char.toLowerCase()){
-        hasUppercase = true;
-    }
-    if(char === char.toLowerCase() && char !== char.toUpperCase()){
-        hasLowercase = true;
-    }
-    if(number.includes(char)){
-        hasNumber = true;
-    }
-    if(specialCharacters.includes(char)){
-        hasSpecial = true;
-    }
-}
-// Calculate score
+//     if(char === char.toUpperCase() && char !== char.toLowerCase()){
+//         hasUppercase = true;
+//     }
+//     if(char === char.toLowerCase() && char !== char.toUpperCase()){
+//         hasLowercase = true;
+//     }
+//     if(number.includes(char)){
+//         hasNumber = true;
+//     }
+//     if(specialCharacters.includes(char)){
+//         hasSpecial = true;
+//     }
+// }
+// // Calculate score
 
-let score = 0;
+// let score = 0;
 
-if(hasLength){
-    score++;
-}
+// if(hasLength){
+//     score++;
+// }
 
-if(hasUppercase){
-    score++;
-}
+// if(hasUppercase){
+//     score++;
+// }
 
-if(hasLowercase){
-    score++;
-}
+// if(hasLowercase){
+//     score++;
+// }
 
-if(hasNumber){
-    score++;
-}
+// if(hasNumber){
+//     score++;
+// }
 
-if(hasSpecial){
-    score++;
-}
+// if(hasSpecial){
+//     score++;
+// }
 
-// Determine strength
+// // Determine strength
 
-if(score <= 2){
-    console.log("Password Strength: Weak");
-}
-else if(score <= 4){
-    console.log("Password Strength: Medium");
-}
-else{
-    console.log("Password Strength: Strong");
-}
+// if(score <= 2){
+//     console.log("Password Strength: Weak");
+// }
+// else if(score <= 4){
+//     console.log("Password Strength: Medium");
+// }
+// else{
+//     console.log("Password Strength: Strong");
+// }
 
-// Show missing requirements
+// // Show missing requirements
 
-console.log("\nMissing Requirements:");
+// console.log("\nMissing Requirements:");
 
-if(!hasLength){
-    console.log("- Password must have at least 8 characters.");
-}
+// if(!hasLength){
+//     console.log("- Password must have at least 8 characters.");
+// }
 
-if(!hasUppercase){
-    console.log("- Password must contain an uppercase letter.");
-}
+// if(!hasUppercase){
+//     console.log("- Password must contain an uppercase letter.");
+// }
 
-if(!hasLowercase){
-    console.log("- Password must contain a lowercase letter.");
-}
+// if(!hasLowercase){
+//     console.log("- Password must contain a lowercase letter.");
+// }
 
-if(!hasNumber){
-    console.log("- Password must contain a number.");
-}
+// if(!hasNumber){
+//     console.log("- Password must contain a number.");
+// }
 
-if(!hasSpecial){
-    console.log("- Password must contain a special character.");
-}
+// if(!hasSpecial){
+//     console.log("- Password must contain a special character.");
+// }
 
 
 

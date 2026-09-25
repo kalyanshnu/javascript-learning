@@ -606,3 +606,99 @@
 // 85–89% → 50% scholarship
 // 80–84% → 25% scholarship
 // Below 80% → No scholarship
+
+//Inputs
+let Sname = prompt("Enter your name:");
+let EMarks = Number(prompt("Enter your English Marks out of 100: "));
+let MMarks = Number(prompt("Enter your Maths Marks out of 100: "));
+let SMarks = Number(prompt("Enter your Science Marks out of 100: "));
+let SSMarks = Number(prompt("Enter your Social Science Marks out of 100: "));
+let CMarks = Number(prompt("Enter your Computer Marks out of 100: "));
+let Attendance = Number(prompt("Attendance percentage of your out of 100% "));
+
+// Logics
+let Total_Marks = EMarks+MMarks+SMarks+SSMarks+CMarks;
+let percentage = (Total_Marks/500) * 100
+let GRADE;
+let IsEligible;
+
+// Grading condition
+if(percentage >= 90){
+    GRADE = "A+";
+}
+else if(percentage >= 80){
+    GRADE = "A";
+}
+else if(percentage >= 70){
+    GRADE = "B";
+}
+else if(percentage >= 60){
+    GRADE = "C";
+}
+else if(percentage >=50){
+    GRADE = "D";
+}
+else{
+    GRADE = "F";
+}
+
+// Results
+console.log("Total Marks Obtained: ", Total_Marks);
+console.log("Percentage : ", percentage);
+console.log("GRADE Obtained: ", GRADE);
+
+let AllSubjectsCleared = EMarks >=30 && MMarks >=30 && SMarks >=30 && SSMarks >=30 && CMarks >=30
+let passStatus;
+
+if(AllSubjectsCleared){
+    passStatus = "Pass";
+}
+else{
+    passStatus = "Fail";
+}
+console.log("Status: ", passStatus);
+
+
+// Exam Eligibility Condition
+if (Attendance >= 75 && AllSubjectsCleared ) {
+    console.log("Student is eligible for exam");
+}
+else{
+    console.log("Student is not eligible for exam");
+}
+
+
+//Scholarship Eligibility
+if (percentage >=85 && Attendance >= 80) {
+    // Scholarship levels
+
+    if(percentage >= 90){    
+        console.log("100% Scholarship Eligible");
+    }
+    else if(percentage >= 85){
+        console.log("50% Scholarship Eligible");
+    }
+}
+else if(percentage >= 80){
+    console.log("25% Schlarship Eligible");
+}
+
+// Final Category
+if(GRADE === "A+"){
+    console.log("Outstanding");
+}
+else if(GRADE == "A"){
+    console.log("Excellent");
+}
+else if(GRADE == "B"){
+    console.log("Very Good");
+}
+else if(GRADE == "C"){
+    console.log("Good");
+}
+else if(GRADE == "D"){
+    console.log("Average");
+}
+else if(GRADE == "F"){
+    console.log("Fail");
+}

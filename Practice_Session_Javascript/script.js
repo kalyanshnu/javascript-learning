@@ -195,13 +195,36 @@ let obj = new Object();
 // // didn't use obj.val as we are finding directly val named property in the object
 // // we are using val which is in the function parameter.
 
-arr.forEach((val) => {
-    console.log(obj[val] === obj.val)
-    console.log(obj.val)
-    console.log(obj[val])
-    obj[val] === undefined ? obj[val] = 1 : obj[val]++; //ternary operator (if else operation)
-})
+// arr.forEach((val) => {
+//     console.log(obj[val] === obj.val)
+//     console.log(obj.val)
+//     console.log(obj[val])
+//     obj[val] === undefined ? obj[val] = 1 : obj[val]++; //ternary operator (if else operation)
+// })
 
-console.log(obj);
+// console.log(obj);
+
+
+
+ //Closure
+// function abcd(){
+//     let a = 12;
+
+//     return function(){
+//         console.log(a);
+//     }
+// }
+
+
+
+///d24 sheet
+// 21
+// function Callerfcn(fcn) {
+//     setTimeout(fcn, 3000);
+// }
+
+// Callerfcn(function() {
+//     console.log("Hey");
+// })
 
 
